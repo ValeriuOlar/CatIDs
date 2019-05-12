@@ -13,7 +13,7 @@ public class Splash extends AppCompatActivity {
         Thread timer = new Thread(){
             public void run(){
                 try {
-                    sleep(4500);
+                    sleep(5000);
                 }
                 catch (InterruptedException e){
                     e.printStackTrace();

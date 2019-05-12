@@ -14,8 +14,8 @@
         android:layout_height="103dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="275dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="244dp"
         android:background="@drawable/rounded_button"
         android:text="Cat Breed Search"
         android:textColor="#761d1d" />
@@ -38,16 +38,16 @@
         android:layout_height="153dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="226dp"
-        android:layout_marginTop="363dp"
+        android:layout_marginStart="197dp"
+        android:layout_marginTop="340dp"
         android:background="@drawable/rounded_button"
         android:text="Cat knowlage and entertainment"
         android:textColor="#761d1d" />
 
     <Button
         android:id="@+id/camera"
-        android:layout_width="110dp"
-        android:layout_height="79dp"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="27dp"
