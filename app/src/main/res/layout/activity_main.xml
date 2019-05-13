@@ -10,14 +10,14 @@
 
     <Button
         android:id="@+id/yknowlage2"
-        android:layout_width="121dp"
-        android:layout_height="116dp"
+        android:layout_width="116dp"
+        android:layout_height="108dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="97dp"
         android:layout_marginTop="338dp"
         android:background="@drawable/rounded_button"
-        android:text="Cat Breed Search"
+        android:text="Cat Search"
         android:textColor="#761d1d" />
 
     <TextView
@@ -33,20 +33,20 @@
 
     <Button
         android:id="@+id/yknowlage"
-        android:layout_width="140dp"
-        android:layout_height="119dp"
+        android:layout_width="117dp"
+        android:layout_height="115dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="245dp"
-        android:layout_marginTop="431dp"
+        android:layout_marginStart="243dp"
+        android:layout_marginTop="336dp"
         android:background="@drawable/rounded_button"
-        android:text="Cat knowlage and entertainment"
+        android:text="Cat knowlage"
         android:textColor="#761d1d" />
 
     <Button
         android:id="@+id/camera"
-        android:layout_width="128dp"
-        android:layout_height="105dp"
+        android:layout_width="120dp"
+        android:layout_height="102dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="90dp"
@@ -57,14 +57,14 @@
 
     <Button
         android:id="@+id/chart"
-        android:layout_width="111dp"
-        android:layout_height="128dp"
+        android:layout_width="118dp"
+        android:layout_height="99dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="292dp"
-        android:layout_marginTop="175dp"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="178dp"
         android:background="@drawable/rounded_button"
-        android:text="History"
+        android:text="Image History"
         android:textColor="#761d1d" />
 
 </RelativeLayout>
