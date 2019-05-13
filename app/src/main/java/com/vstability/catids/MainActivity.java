@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button knowlage = (Button)findViewById(R.id.yknowlage);
+        Button knowlage2 = (Button)findViewById(R.id.yknowlage2);
         Button camera1 = (Button)findViewById(R.id.camera);
         Button chart1 = (Button)findViewById(R.id.chart);
 
@@ -36,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent int3 = new Intent(MainActivity.this, infochart.class);
                 startActivity(int3);
+            }
+        });
+        chart1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent int4 = new Intent(MainActivity.this, breed.class);
+                startActivity(int4);
             }
         });
     }
