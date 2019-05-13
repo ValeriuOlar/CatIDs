@@ -15,8 +15,8 @@
         android:layout_height="108dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="97dp"
-        android:layout_marginTop="338dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="327dp"
         android:background="@drawable/rounded_button"
         android:text="Cat Search"
         android:textColor="#761d1d" />
@@ -27,44 +27,44 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="8dp"
         android:text="Cat IDs"
         android:textColor="#761d1d"
-        android:textSize="24sp" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/yknowlage"
         android:layout_width="117dp"
-        android:layout_height="115dp"
+        android:layout_height="110dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="243dp"
-        android:layout_marginTop="336dp"
+        android:layout_marginStart="231dp"
+        android:layout_marginTop="324dp"
         android:background="@drawable/rounded_button"
         android:text="Cat knowlage"
         android:textColor="#761d1d" />
 
     <Button
         android:id="@+id/camera"
-        android:layout_width="120dp"
-        android:layout_height="102dp"
+        android:layout_width="116dp"
+        android:layout_height="111dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="175dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="159dp"
         android:background="@drawable/rounded_button"
         android:text="Camera"
         android:textColor="#761d1d" />
 
     <Button
         android:id="@+id/chart"
-        android:layout_width="118dp"
-        android:layout_height="99dp"
+        android:layout_width="116dp"
+        android:layout_height="114dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="246dp"
-        android:layout_marginTop="178dp"
+        android:layout_marginStart="229dp"
+        android:layout_marginTop="158dp"
         android:background="@drawable/rounded_button"
         android:text="Image History"
         android:textColor="#761d1d" />
