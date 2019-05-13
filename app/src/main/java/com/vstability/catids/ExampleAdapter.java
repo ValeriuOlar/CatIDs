@@ -16,6 +16,14 @@ public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleV
 
     private Context mContext;
     private ArrayList<ExampleItem> mExampleList;
+    private OnItemClickListener mListener;
+
+    public interface OnItemClickListener { // variabiles that will create the interface
+        void onItemClick(int position);
+    }
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        mListener = listener;
+    }
 
     public ExampleAdapter(Context context, ArrayList<ExampleItem> exampleList) {
         mContext = context;
@@ -55,6 +63,10 @@ public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleV
             mImageView = itemView.findViewById(R.id.image_view);
             mTextViewCreator = itemView.findViewById(R.id.text_view_creator);
             mTextViewLikes = itemView.findViewById(R.id.text_view_likes);
+
+            // adding constructor for the  view
+
+
         }
     }
 }
