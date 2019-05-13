@@ -1,5 +1,6 @@
 package com.vstability.catids;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -18,7 +19,10 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class breed extends AppCompatActivity {
+public class breed extends AppCompatActivity implements ExampleAdapter.OnItemClickListener {
+    public static final String EXTRA_URL = "imageUrl";
+    public static final String EXTRA_CREATOR = "creatorName";
+    public static final String EXTRA_LIKES = "likeCount";
 
     private RecyclerView mRecyclerView;
     private ExampleAdapter mExampleAdapter;
@@ -64,6 +68,7 @@ public class breed extends AppCompatActivity {
 
                             mExampleAdapter = new ExampleAdapter(breed.this, mExampleList);
                             mRecyclerView.setAdapter(mExampleAdapter);
+                            mExampleAdapter.setOnItemClickListener(breed.this);
 
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -76,5 +81,16 @@ public class breed extends AppCompatActivity {
             }
         });
         mRequestQueue.add(request);
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        Intent detailIntent = new Intent(this, DetailActivity.class);
+        ExampleItem clickedItem = mExampleList.get(position);
+
+        detailIntent.putExtra(EXTRA_URL, clickedItem.getImageUrl());
+        detailIntent.putExtra(EXTRA_CREATOR, clickedItem.getCreator());
+        detailIntent.putExtra(EXTRA_LIKES, clickedItem.getLikeCount());
+        startActivity(detailIntent);
     }
 }
