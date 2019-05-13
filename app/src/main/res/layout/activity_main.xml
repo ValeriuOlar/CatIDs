@@ -10,7 +10,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/yknowlage2"
+        android:id="@+id/yknowlagee"
         android:layout_width="116dp"
         android:layout_height="108dp"
         android:layout_alignParentStart="true"
