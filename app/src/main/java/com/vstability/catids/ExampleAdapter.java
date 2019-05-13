@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleViewHolder> {
 
+
     private Context mContext;
     private ArrayList<ExampleItem> mExampleList;
 
