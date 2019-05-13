@@ -14,7 +14,6 @@ import java.util.ArrayList;
 
 public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleViewHolder> {
 
-
     private Context mContext;
     private ArrayList<ExampleItem> mExampleList;
 
@@ -22,7 +21,6 @@ public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleV
         mContext = context;
         mExampleList = exampleList;
     }
-
     @Override
     public ExampleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(mContext).inflate(R.layout.example_item, parent, false);
