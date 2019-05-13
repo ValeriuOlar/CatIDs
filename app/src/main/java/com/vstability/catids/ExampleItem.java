@@ -1,5 +1,5 @@
 package com.vstability.catids;
-
+// Class that gets the Cat API online info from  https://pixabay.com/api/docs/
 public class ExampleItem {
         private String mImageUrl;
         private String mCreator;
