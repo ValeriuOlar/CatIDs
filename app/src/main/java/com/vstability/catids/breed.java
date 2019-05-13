@@ -51,6 +51,20 @@ public class breed extends AppCompatActivity {
                         // the Json array request
                         try {
                             JSONArray jsonArray = response.getJSONArray("hits");
+
+                            for (int i = 0; i < jsonArray.length(); i++) {
+                                JSONObject hit = jsonArray.getJSONObject(i);
+
+                                String creatorName = hit.getString("user");
+                                String imageUrl = hit.getString("webformatURL");
+                                int likeCount = hit.getInt("likes");
+
+                                mExampleList.add(new ExampleItem(imageUrl, creatorName, likeCount));
+                            }
+
+                            mExampleAdapter = new ExampleAdapter(breed.this, mExampleList);
+                            mRecyclerView.setAdapter(mExampleAdapter);
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
